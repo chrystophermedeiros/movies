@@ -3,6 +3,7 @@ import styled from 'styled-components'
 export const Container = styled.div`
   padding: 0 20px;
   overflow: hidden;
+  width: 97%;
 
   h2 {
     color: #ffffff;
