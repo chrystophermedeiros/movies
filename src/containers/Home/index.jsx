@@ -1,16 +1,19 @@
 import { useState, useEffect } from 'react'
+import { useNavigate } from 'react-router-dom'
 
-import { Button, Slider } from '../../components'
+import { Button, Modal, Slider } from '../../components'
 import { api } from '../../services/api'
 import { getImages } from '../../utils/getImages'
 import { Background, Container, Info, ContainerButton, Poster } from './style'
 
 export function Home() {
+  const [showModal, setShowModal] = useState()
   const [movie, setMovie] = useState()
   const [topMovie, setTopMovie] = useState()
   const [topSeries, setTopSeries] = useState()
   const [popularSeries, setPopularSeries] = useState()
   const [popularPeople, setPopularPeople] = useState()
+  const navigate = useNavigate()
 
   useEffect(() => {
     async function getMovies() {
@@ -64,13 +67,23 @@ export function Home() {
     <>
       {movie && (
         <Background img={getImages(movie.backdrop_path)}>
+          {showModal && (
+            <Modal setShowModal={setShowModal} movieId={movie.id} />
+          )}
           <Container>
             <Info>
               <h1>{movie.title}</h1>
               <p>{movie.overview}</p>
               <ContainerButton>
-                <Button red={true}>Assista Agora</Button>
-                <Button red={false}>Assistir Triler</Button>
+                <Button
+                  onClick={() => navigate(`/detalhe/${movie.id}`)}
+                  red={true}
+                >
+                  Assista Agora
+                </Button>
+                <Button onClick={() => setShowModal(true)} red={false}>
+                  Assistir Triler
+                </Button>
               </ContainerButton>
             </Info>
             <Poster>

@@ -6,9 +6,15 @@ export const Container = styled.div`
   align-items: center;
   justify-content: center;
   img {
-    width: 300px;
+    width: 200px;
     border-radius: 30px;
     height: 100%;
+  }
+
+  @media screen and (max-width: 600px) {
+    img {
+      width: 100px;
+    }
   }
 
   h3 {

@@ -1,12 +1,12 @@
 import { ButtonRed, ButtonWhite } from './style'
 
-export function Button({ children, red }) {
+export function Button({ children, red, ...rest }) {
   return (
     <>
       {red ? (
-        <ButtonRed>{children}</ButtonRed>
+        <ButtonRed {...rest}>{children}</ButtonRed>
       ) : (
-        <ButtonWhite>{children}</ButtonWhite>
+        <ButtonWhite {...rest}>{children}</ButtonWhite>
       )}
     </>
   )
