@@ -4,7 +4,14 @@ import { useNavigate } from 'react-router-dom'
 import { Button, Modal, Slider } from '../../components'
 import { api } from '../../services/api'
 import { getImages } from '../../utils/getImages'
-import { Background, Container, Info, ContainerButton, Poster } from './style'
+import {
+  MainContainer,
+  Background,
+  Container,
+  Info,
+  ContainerButton,
+  Poster
+} from './style'
 
 export function Home() {
   const [showModal, setShowModal] = useState()
@@ -64,7 +71,7 @@ export function Home() {
   }, [])
 
   return (
-    <>
+    <MainContainer>
       {movie && (
         <Background img={getImages(movie.backdrop_path)}>
           {showModal && (
@@ -100,6 +107,6 @@ export function Home() {
       {popularPeople && (
         <Slider info={popularPeople} title={'Artistas Populares'} />
       )}
-    </>
+    </MainContainer>
   )
 }

@@ -1,5 +1,13 @@
 import styled from 'styled-components'
 
+export const MainContainer = styled.div`
+  width: 100%;
+  @media screen and (max-width: 600px) {
+    width: 100%;
+    height: 100vh;
+  }
+`
+
 export const Background = styled.div`
   background-image: url(${(props) => props.img});
   background-position: center;
@@ -28,6 +36,19 @@ export const Info = styled.div`
   padding: 20px;
   width: 50%;
 
+  @media screen and (max-width: 600px) {
+    width: 100%;
+    font-size: 5px;
+
+    p {
+      overflow: auto;
+      font-size: 16px;
+      width: 100%;
+      height: 20%;
+      margin: 0;
+    }
+  }
+
   h1 {
     font-size: xx-large;
     font-weight: 700;
@@ -55,8 +76,23 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-around;
-  height: 100%;
+  height: 100vh;
   max-width: 1500px;
+  @media screen and (max-width: 600px) {
+    img {
+      width: 250px;
+      margin-top: 120%;
+    }
+    flex-direction: column-reverse;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    p {
+      margin: 10px;
+    }
+  }
 `
 
 export const ContainerButton = styled.div`

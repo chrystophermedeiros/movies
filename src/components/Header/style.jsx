@@ -23,6 +23,10 @@ export const Menu = styled.ul`
   display: flex;
   list-style: none;
   gap: 50px;
+
+  @media screen and (max-width: 600px) {
+    gap: 20px;
+  }
 `
 
 export const Li = styled.li`
@@ -31,6 +35,10 @@ export const Li = styled.li`
   cursor: pointer;
   font-size: 24px;
   position: relative;
+
+  @media screen and (max-width: 600px) {
+    font-size: 16px;
+  }
 
   a {
     text-decoration: none;
