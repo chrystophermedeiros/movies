@@ -38,13 +38,15 @@ export const Info = styled.div`
 
   @media screen and (max-width: 600px) {
     width: 100%;
+    height: 35%;
+    overflow: hidden;
     font-size: 5px;
 
     p {
       overflow: auto;
       font-size: 16px;
       width: 100%;
-      height: 20%;
+      height: 40%;
       margin: 0;
     }
   }
@@ -79,9 +81,10 @@ export const Container = styled.div`
   height: 100vh;
   max-width: 1500px;
   @media screen and (max-width: 600px) {
+    height: 100vh;
+    width: 100vw;
     img {
       width: 250px;
-      margin-top: 120%;
     }
     flex-direction: column-reverse;
     display: flex;

@@ -10,6 +10,10 @@ const buttonStyled = css`
   font-size: 18px;
   font-weight: 500;
 
+  @media screen and (max-width: 600px) {
+    font-size: 16px;
+  }
+
   &:hover {
     color: #ff0000;
     background: #ffffff;

@@ -15,7 +15,8 @@ export const Container = styled.div`
   min-height: 80px;
 
   img {
-    width: 25%;
+    width: 40%;
+    padding: 10px;
   }
 `
 
@@ -23,7 +24,6 @@ export const Menu = styled.ul`
   display: flex;
   list-style: none;
   gap: 50px;
-
   @media screen and (max-width: 600px) {
     gap: 20px;
   }
