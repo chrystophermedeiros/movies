@@ -24,7 +24,7 @@ export const Menu = styled.ul`
   display: flex;
   list-style: none;
   gap: 50px;
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 800px) {
     gap: 20px;
   }
 `
@@ -36,7 +36,7 @@ export const Li = styled.li`
   font-size: 24px;
   position: relative;
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 800px) {
     font-size: 16px;
   }
 

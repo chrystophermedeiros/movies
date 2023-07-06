@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const MainContainer = styled.div`
   width: 100%;
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 800px) {
     width: 100%;
     height: 100vh;
   }
@@ -12,7 +12,7 @@ export const Background = styled.div`
   background-image: url(${(props) => props.img});
   background-position: center;
   background-size: cover;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   display: flex;
 
@@ -36,9 +36,9 @@ export const Info = styled.div`
   padding: 20px;
   width: 50%;
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 800px) {
     width: 100%;
-    height: 35%;
+    height: 40%;
     overflow: hidden;
     font-size: 5px;
 
@@ -71,6 +71,7 @@ export const Poster = styled.div`
   img {
     width: 300px;
     border-radius: 30px;
+    margin-top: 60px;
   }
 `
 
@@ -80,7 +81,7 @@ export const Container = styled.div`
   justify-content: space-around;
   height: 100vh;
   max-width: 1500px;
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 800px) {
     height: 100vh;
     width: 100vw;
     img {
