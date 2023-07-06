@@ -2,12 +2,19 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
   padding: 0 20px;
-  overflow: auto;
+
   flex-direction: column;
   align-items: center;
   gap: 35px;
   padding: 35px 0;
   margin: 0 4%;
+  @media screen and (max-width: 800px) {
+    overflow: auto;
+    padding: 10px;
+    h3 {
+      font-size: 10px;
+    }
+  }
 
   h2 {
     color: #ffffff;
