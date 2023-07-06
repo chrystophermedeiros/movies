@@ -9,7 +9,6 @@ export const Container = styled.div`
   padding: 35px 0;
   margin: 0 4%;
   @media screen and (max-width: 800px) {
-    display: block;
     padding: 10px;
     h3 {
       font-size: 14px;
