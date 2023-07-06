@@ -75,7 +75,6 @@ export const Poster = styled.div`
   img {
     width: 300px;
     border-radius: 30px;
-    margin-top: 60px;
   }
 `
 
@@ -90,6 +89,7 @@ export const Container = styled.div`
     width: 100vw;
     img {
       width: 250px;
+      margin-top: 40px;
     }
     flex-direction: column-reverse;
     display: flex;
@@ -107,4 +107,6 @@ export const ContainerButton = styled.div`
   display: flex;
   margin-top: 30px;
   gap: 20px;
+  align-items: center;
+  justify-content: center;
 `
