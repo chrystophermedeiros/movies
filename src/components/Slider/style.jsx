@@ -10,6 +10,7 @@ export const Container = styled.div`
   margin: 0 4%;
   @media screen and (max-width: 800px) {
     padding: 10px;
+    overflow-x: auto;
     h3 {
       font-size: 14px;
     }
