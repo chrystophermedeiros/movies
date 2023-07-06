@@ -8,7 +8,7 @@ export const Container = styled.div`
   gap: 35px;
   padding: 35px 0;
   margin: 0 4%;
-  overflow-x: auto;
+  overflow: auto;
 
   @media screen and (max-width: 800px) {
     padding: 10px;
