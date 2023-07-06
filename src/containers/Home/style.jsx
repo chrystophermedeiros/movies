@@ -88,7 +88,7 @@ export const Container = styled.div`
     height: 100vh;
     width: 100vw;
     img {
-      width: 250px;
+      width: 230px;
       margin-top: 40px;
     }
     flex-direction: column-reverse;

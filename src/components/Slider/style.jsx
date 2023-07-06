@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
   padding: 0 20px;
-  overflow: hidden;
+  overflow: auto;
   flex-direction: column;
   align-items: center;
   gap: 35px;
