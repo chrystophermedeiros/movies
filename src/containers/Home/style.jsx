@@ -27,6 +27,10 @@ export const Background = styled.div`
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
+    @media screen and (max-width: 800px) {
+      width: 100%;
+      height: 100%;
+    }
   }
 `
 

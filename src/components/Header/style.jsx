@@ -12,11 +12,14 @@ export const Container = styled.div`
     props.changeBackground ? '#000000' : 'transparent'};
   transition: background-color 0.7s ease-in-out;
   width: 100%;
-  min-height: 80px;
+  min-height: 60px;
+
+  @media screen and (max-width: 800px) {
+    gap: 10px;
+  }
 
   img {
     width: 40%;
-    padding: 10px;
   }
 `
 
@@ -25,7 +28,7 @@ export const Menu = styled.ul`
   list-style: none;
   gap: 50px;
   @media screen and (max-width: 800px) {
-    gap: 20px;
+    gap: 10px;
   }
 `
 
