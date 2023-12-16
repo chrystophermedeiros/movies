@@ -3,13 +3,13 @@ import React, { useState, useEffect } from 'react'
 import { FreeMode, Pagination } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/react'
 
-import Cards from '../Cards'
+import CardsSeries from '../CardsSeries'
 import { Container } from './styles'
 
 import 'swiper/css'
 import 'swiper/css/free-mode'
 
-function Slider({ info, title, isTrue }) {
+function SliderSeries({ info, title, isTrue }) {
   const [matches, setMatches] = useState(
     window.matchMedia('(max-width: 600px)').matches
   )
@@ -38,7 +38,7 @@ function Slider({ info, title, isTrue }) {
         >
           {info.map((item, index) => (
             <SwiperSlide key={index}>
-              <Cards item={item} text={true} isShow={isTrue} />
+              <CardsSeries item={item} text={true} isShow={isTrue} />
             </SwiperSlide>
           ))}
         </Swiper>
@@ -46,4 +46,4 @@ function Slider({ info, title, isTrue }) {
     </>
   )
 }
-export default Slider
+export default SliderSeries
